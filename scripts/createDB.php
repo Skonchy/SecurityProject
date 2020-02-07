@@ -35,7 +35,7 @@ if ($conn->query($sql_table1) === TRUE) {
 //Create Table Transactions
 $sql_table2 = "CREATE TABLE Transactions (
     trans_num INT(6) UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    trans_id BINARY(16) NOT NULL,
+    trans_id BINARY(256) NOT NULL,
     cust_id INT(6) UNSIGNED NOT NULL,
     amount DECIMAL NOT NULL,
     trans_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
