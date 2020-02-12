@@ -7,7 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>User Account</title>
 </head>
-<body style="background-color:#C2C5CC;font-family:Verdana, Geneva, sans-serif;">
+<body style="background-image:url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+background-size:cover;background-color:#C2C5CC;font-family:Verdana, Geneva, sans-serif;">
 <script>
 /*battery charge function, gets and displays charge level
 **todo: incorporate into stopping pay meter at full charge*/
@@ -68,9 +69,9 @@ stop.onclick = function() {
     getCharge();
 }}
 </script>
-<header style="width:100%;float:none;text-align:right;margin-bottom:2em;">
-<h4>Logged in as <span id="acc_name">John Lindt</span> | <a style="text-decoration:none;" href="CS410_login.html">log out</a></h4></header>
-<aside style="background-color:#FFFFFF;width:25%;padding-right:.5em;margin-right:3em;float:left;border-style:outset;border-color:#000000;">
+<header style="width:100%;float:none;text-align:right;margin-bottom:2em;color:#FFFFFF;">
+<h4>Logged in as <span id="acc_name">user</span> | <a style="text-decoration:none;" href="CS410_login.html">log out</a></h4></header>
+<aside style="background-color:#FFFFFF;width:25%;padding-right:.5em;margin-right:1em;float:left;border-style:outset;border-color:#000000;">
 <div style="padding:.5em;"><h3>Previous Transactions</h3>
 <p id="acc_hist">Scrolling list</p>
 <h3>Account Balace</h3>
@@ -78,7 +79,8 @@ stop.onclick = function() {
 <h3>Trust Factor</h3>
 <p id="acc_trust">Sliding scale</p></div>
 </aside>
-<section style="text-align:left;">
+<section style="background-color:#FFFFFF;width:25%;float:right;border-style:outset;border-color:#000000;margin-right:40%;">
+<div style="padding:.5em;">
 <h1 id="clock">0.00</h1>
 <p><button id="start" onclick="time();getCharge();">start</button>
 <button id="stop">stop</button></p>
