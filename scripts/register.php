@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "69.30.199.234";
 $username = "root";
 $pass="";
 $db="410Project";
@@ -12,9 +12,9 @@ if ($conn->connect_error) {
 }
 mysql_select_db($db);
 
-if(isset($_POST['register'])){
-    $username=$_POST(['Username']);
-    $pass=$_POST(['Password']);
+//if(isset($_POST['register'])){
+    $username=$_POST(['username']);
+    $pass=$_POST(['password']);
     $trust='0.5';
     $reg_date=CURRENT_TIMESTAMP;
 
@@ -25,6 +25,6 @@ if(isset($_POST['register'])){
     } else {
         echo "Insert into Users failed";
     }
-}
+//}
 
 ?>

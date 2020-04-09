@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "69.30.199.234";
 $username = "root";
 $pass="";
 $db="410Project";
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 mysql_select_db($db);
-
+//if button stop clicked
 if(isset($_POST['transaction'])){
     $logedinUser=$_SESSION['user']['Username'];
     $query=("SELECT id FROM Users WHERE username='$logedinUser'");

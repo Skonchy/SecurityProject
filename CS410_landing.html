@@ -66,6 +66,11 @@ start.onclick = timer;
 /* Stop button */
 stop.onclick = function() {
     clearTimeout(t);
+    var cost= parseFloat(h1.textContent)
+    var bal = document.getElementById("acc_bal")
+    var oldbal=parseFloat(bal.textContent);
+    bal.textContent=toString(cost+oldbal);
+    
     getCharge();
 }}
 </script>
