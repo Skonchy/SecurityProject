@@ -64,7 +64,7 @@ function timer() {
 function risk() {
   bal = parseFloat(document.getElementById('acc_bal').innerHTML);
   trust = parseFloat(document.getElementById('acc_trust').innerHTML);
-  if(bal>0.25 && trust!=0){
+  if(bal<-0.25 && trust!=0){
     trust = trust - 0.5;
   } else if(trust!=100) {
     trust = trust + 0.5;
@@ -97,7 +97,7 @@ stop.onclick = function() {
     cost=+parseFloat(document.getElementById('clock').innerHTML);
     oldBal=+parseFloat(document.getElementById('acc_bal').innerHTML);
     //output new balance
-    bal=parseFloat(cost+oldBal).toFixed(2);
+    bal=parseFloat(oldBal-cost).toFixed(2);
     document.getElementById('acc_bal').innerHTML=bal;
     reset=0
     document.getElementById('clock').innerHTLML = reset.toFixed(2)
